@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:nyt_covid_prj/screens/rootscreen.dart';
 import 'package:nyt_covid_prj/services/palette.dart';
 import 'screens/screens.dart';
 

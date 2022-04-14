@@ -2,13 +2,11 @@ import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nyt_covid_prj/api_services/api_service.dart';
-
 import 'package:nyt_covid_prj/models/models.dart';
 import 'package:nyt_covid_prj/services/palette.dart';
 import 'package:nyt_covid_prj/widgets/covidbar_chart.dart';
 import 'package:nyt_covid_prj/widgets/custom_appbar.dart';
 import 'package:nyt_covid_prj/widgets/singleton.dart';
-import 'package:fl_chart/fl_chart.dart';
 import 'package:nyt_covid_prj/widgets/widgets.dart';
 
 class HomeScreen extends StatefulWidget {

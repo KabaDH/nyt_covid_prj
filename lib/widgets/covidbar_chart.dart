@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:nyt_covid_prj/models/models.dart';
@@ -79,7 +78,7 @@ class _CovidBarChartState extends State<CovidBarChart> {
     //Не обязательно, но позволяет сохранять пропорции квадрата (чтобы ничего не съезжало)
     return Column(children: [
       Padding(
-        padding: const EdgeInsets.only(left: 10, right: 10,bottom: 10),
+        padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
         child: Row(
           children: [
             buildCard('cases', graphData[0], leftBarColor),
@@ -89,7 +88,7 @@ class _CovidBarChartState extends State<CovidBarChart> {
         ),
       ),
       AspectRatio(
-        aspectRatio: 25/ 18,
+        aspectRatio: 25 / 18,
         child: Card(
           elevation: 0,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
