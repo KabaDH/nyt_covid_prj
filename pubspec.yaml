@@ -32,6 +32,7 @@ dependencies:
   http: ^0.13.3
   bubble_tab_indicator: ^0.1.4
   fl_chart: ^0.40.0
+  url_launcher: ^6.0.20
 
 dev_dependencies:
   flutter_test:

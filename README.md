@@ -1,7 +1,7 @@
 A tiny dashboard of COVID-19 data across the USA with the detail information for every state.
 Data provided by The New York Times.
 
-Promoted modules: fl_chart,bubble_tab_indicator,csv
+Promoted modules: fl_chart,bubble_tab_indicator,csv,url_launcher
 Promoted widgets: singleton, BarChart, CustomAppbar,BubbleTabIndicator,CustomScrollView
 
 ==============================================================================
