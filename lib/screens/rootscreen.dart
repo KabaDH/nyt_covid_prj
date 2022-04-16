@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nyt_covid_prj/screens/info_screen.dart';
 import 'package:nyt_covid_prj/widgets/singleton.dart';
@@ -27,7 +26,7 @@ class _RootScreenState extends State<RootScreen> {
   timer() {
     Timer(Duration(seconds: 1), () {
       setState(() {
-        print(currentIndex);
+        // print(currentIndex);
         currentIndex = s1.currentIndex!;
       });
       timer();

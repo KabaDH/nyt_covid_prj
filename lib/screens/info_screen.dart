@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nyt_covid_prj/services/palette.dart';
 import 'package:nyt_covid_prj/widgets/widgets.dart';

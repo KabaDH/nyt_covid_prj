@@ -1,13 +1,10 @@
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nyt_covid_prj/api_services/api_service.dart';
 import 'package:nyt_covid_prj/models/models.dart';
 import 'package:nyt_covid_prj/services/palette.dart';
-import 'package:nyt_covid_prj/widgets/covidbar_chart.dart';
-import 'package:nyt_covid_prj/widgets/custom_appbar.dart';
-import 'package:nyt_covid_prj/widgets/singleton.dart';
 import 'package:nyt_covid_prj/widgets/widgets.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -31,6 +28,13 @@ class _HomeScreenState extends State<HomeScreen> {
     selectedState = s1.usaState ?? defState;
     s1.currentIndex = 0;
     _getData();
+    _getVersion();
+  }
+
+  Future<void> _getVersion() async {
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    s1.version = packageInfo.version;
+    s1.build = packageInfo.buildNumber;
   }
 
   //загружаем данные о болезнях

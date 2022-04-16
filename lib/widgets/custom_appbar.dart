@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:nyt_covid_prj/services/palette.dart';
+import 'package:nyt_covid_prj/widgets/singleton.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class CustomAppbar extends StatelessWidget with PreferredSizeWidget {
@@ -34,6 +33,7 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double _fontSize = 16.0;
+    var s1 = Singleton.instance; //Singleton хранит значения между виджетами
 
     return Center(
       child: Container(
@@ -122,7 +122,15 @@ class CustomDrawer extends StatelessWidget {
                     },
                   ),
                 ],
-              )
+              ),
+              Text(
+                'Version: ${s1.version}+${s1.build}',
+                style: TextStyle(
+                  fontSize: _fontSize,
+                  color: Colors.white,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
             ]),
       ),
     );

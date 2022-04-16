@@ -6,4 +6,6 @@ class Singleton {
   static Singleton get instance => _singleton;
   UsaState? usaState;
   int? currentIndex;
+  String? version;
+  String? build;
 }

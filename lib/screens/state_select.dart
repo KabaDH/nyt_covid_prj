@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:nyt_covid_prj/api_services/api_service.dart';
 import 'package:nyt_covid_prj/models/models.dart';
